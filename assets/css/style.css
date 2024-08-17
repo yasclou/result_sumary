@@ -1,0 +1,247 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    width: 375px;
+}
+
+.head{
+    grid-area: head;
+    padding-top: 20px;
+    width: 375px;
+    height: 280px;
+    border-radius: 0 0 20px 20px;
+    background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:white;
+    text-align: center;
+
+}
+
+.score{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    display: inline-block;
+    background-image:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: 0;
+}
+
+.result{
+    color: rgb(255 255 255 / 67%);
+    font-size:small;
+    font-weight: 500;
+    padding: 15px;
+
+}
+
+.number{
+    font-size: 35px;
+    font-weight: 900;
+    padding: 20px 15px 0 15px;
+}
+
+.completed{
+    font-size: smaller;
+    color: rgba(255, 255, 255, 0.366);
+
+}
+
+.congratulations{
+    padding: 25px 25px 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.explain{
+    padding:0 60px 30px 60px;
+    color: rgba(255, 255, 255, 0.762);
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+}
+
+
+.summary{
+    grid-area: sumary;
+    padding: 20px 20px 10px 30px;
+    color:hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+
+.conteiner{
+    grid-area: result;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-reaction{
+    margin: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 87, 87, 0.053);
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    color:hsl(0, 100%, 67%);
+    font-size: small;
+    font-weight: bold;
+}
+
+.conteiner-memory{
+    margin: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    background-color:hsla(39, 100%, 56%, 0.053);
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    color:hsl(39, 100%, 56%);
+    font-size: small;
+    font-weight: bold;
+}
+
+.conteiner-verbal{
+    margin: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    background-color:hsla(166, 100%, 37%, 0.056);
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    color:hsl(166, 100%, 37%);
+    font-size: small;
+    font-weight: bold;
+}
+
+.conteiner-visual{
+    margin: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    background-color:hsla(234, 85%, 45%, 0.053);
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    color:hsl(234, 85%, 45%);
+    font-size: small;
+    font-weight: bold;
+}
+
+
+
+
+button{
+    border:none;
+    background-color:hsl(224, 30%, 27%) ;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 20px;
+    padding: 12px;
+    margin: 2px;
+    width: 320px;
+}
+
+.attribution { 
+    grid-area: footer;
+    font-size: 11px; 
+    text-align: center;
+    padding: 15px;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (min-width:376px) {
+    body{
+        width: auto;
+    }
+    .card{
+        width: 600px;
+        display: flex;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow:1px 1px 25px lightblue;
+        margin:auto;
+        margin-top: 150px;
+        align-items: center;
+
+    }
+    .head{
+        width: 800px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .total-resultados{
+        width: 450px;
+        margin: 20px;
+    }
+
+    .conteiner-reaction {
+        width: 250px;
+    }
+
+    .conteiner-memory{
+        width: 250px;
+    }
+
+    .conteiner-verbal{
+        width: 250px;
+    }
+
+    .conteiner-visual{
+        width: 250px;
+    }
+
+    button{
+        width: 250px;
+    }
+
+    .score{
+        height: 180px;
+        width: 180px;
+    }
+
+    .number{
+        font-size: 60px;
+        padding: 40px 30px 0 30px;
+    }
+    
+    .completed{
+        font-size: smaller;
+    }
+
+    .result{
+        font-size:medium;
+        font-weight: 500;
+        padding: 20px;
+    }
+
+    .attribution{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
